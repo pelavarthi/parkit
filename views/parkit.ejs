@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <title>Map - ParkIt!</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" href="/img/favicon.ico">
+
+  <script type="module" src="js/openstreetmap.js"></script>
+</head>
+
+<body class="is-preload">
+  <!--The div element for the map -->
+  <div id="page-wrapper">
+    <!-- Header -->
+    <div id="header">
+      <!-- Logo -->
+      <h1><a href="/" id="logo"><img src="/img/parkitlogo.png" width=230 height=78></a></h1>
+      <h3><i>Hassle-free parking at your fingertips</i></h3>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li class="current"><a href="/parkit">ParkIt!</a></li>
+          <li><a href="/about">About the Team</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h3 id="address"></h3>
+    <p><center>Click on an area of the map to reveal parking spaces around, or type in an address below.</center></p>
+    <div id="map"></div>
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+             <!--           <section class="col-3 col-6-narrower col-12-mobilep">
+            <h3>Links to Stuff</h3>
+            <ul class="links">
+              <li><a href="#">Mattis et quis rutrum</a></li>
+              <li><a href="#">Suspendisse amet varius</a></li>
+              <li><a href="#">Sed et dapibus quis</a></li>
+              <li><a href="#">Rutrum accumsan dolor</a></li>
+              <li><a href="#">Mattis rutrum accumsan</a></li>
+              <li><a href="#">Suspendisse varius nibh</a></li>
+              <li><a href="#">Sed et dapibus mattis</a></li>
+            </ul>
+          </section>
+          <section class="col-3 col-6-narrower col-12-mobilep">
+            <h3>More Links to Stuff</h3>
+            <ul class="links">
+              <li><a href="#">Duis neque nisi dapibus</a></li>
+              <li><a href="#">Sed et dapibus quis</a></li>
+              <li><a href="#">Rutrum accumsan sed</a></li>
+              <li><a href="#">Mattis et sed accumsan</a></li>
+              <li><a href="#">Duis neque nisi sed</a></li>
+              <li><a href="#">Sed et dapibus quis</a></li>
+              <li><a href="#">Rutrum amet varius</a></li>
+            </ul>
+          </section> -->
+          <section class="col-6 col-12-narrower">
+            <center>
+              <input id="searchTextField" type="text" size="50" placeholder="Type Address Here:" background-color : #d1d1d1; >
+              <br>
+              <br>
+              <br>
+              <br>
+              <h3>Get In Touch</h3>
+              <form action="https://formsubmit.co/aff0a599ac1a890560ba64c742df5cac" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://parkit.sites.tjhsst.edu/parkit">
+                <div class="row gtr-300">
+                  <div class="col-6 col-12-mobilep">
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                  </div>
+                  <div class="col-6 col-12-mobilep">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <ul class="actions">
+                      <li><input type="submit" class="button alt" value="Send Message" /></li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </center>
+          </section>
+        </div>
+      </div>
+
+    <h3><center>©2023, All Rights Reserved. ParkIt</center></h3>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Zypx1mmpCXLKUvScZD4vvhZup5otZxo&libraries=places&callback=initMap&v=weekly"
+      defer></script>
+</body>
+
+</html>
