@@ -1,4 +1,4 @@
-# parkit
+# ParkIt
 
 HackTJ 2023
 
